@@ -14,3 +14,8 @@ Step 2: refactored code following DRY clean code concept:
 3. Removed the second function as it has become redundant after the above code implementation.
 
 4. Renamed the function to make it more readable
+
+Step 3: called `countDaysUntilHolidays` function with two chosen arguments:
+
+- one to count the days left until Christmas
+- one to count the days left until New Years eve
