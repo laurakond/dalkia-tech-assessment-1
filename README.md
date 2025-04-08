@@ -1,6 +1,7 @@
 # dalkia-tech-assessment-1
 
 Step 1: Made the initial commit
+
 Step 2: refactored code following DRY clean code concept:
 
 1. Added two properties to make the function dynamic:
