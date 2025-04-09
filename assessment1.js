@@ -6,8 +6,10 @@ function countDaysUntilHolidays(date) {
   return Math.round((q - p) / (1000 * 60 * 60 * 24));
 }
 
-// var variable2 = document.getElementById(elementName);
-// variable2.innerText = variable;
+/** Function that fetches the element from HTML */
+function fetchElement(elementName) {
+  return document.getElementById(elementName);
+}
 
 /** Counts the days left until Christmas */
 countDaysUntilHolidays("2025-12-25", "my-element");
