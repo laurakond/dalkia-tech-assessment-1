@@ -1,12 +1,13 @@
-function countDaysUntilHolidays(date, elementName) {
-  var p = new Date();
-  var q = new Date(date);
+/** Function that calculates the number of days left until holidays*/
+function countDaysUntilHolidays(date) {
+  var currentDate = new Date();
+  var targetDate = new Date(date);
 
-  var variable = Math.round((q - p) / (1000 * 60 * 60 * 24));
-
-  var variable2 = document.getElementById(elementName);
-  variable2.innerText = variable;
+  return Math.round((q - p) / (1000 * 60 * 60 * 24));
 }
+
+// var variable2 = document.getElementById(elementName);
+// variable2.innerText = variable;
 
 /** Counts the days left until Christmas */
 countDaysUntilHolidays("2025-12-25", "my-element");
