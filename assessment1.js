@@ -11,6 +11,13 @@ function fetchElement(elementName) {
   return document.getElementById(elementName);
 }
 
+/** Function that allocates element text to the number of days left until
+ * holidays
+ */
+function setElementText(elementName, date) {
+  elementName.innerText = countDaysUntilHolidays(date);
+}
+
 /** Counts the days left until Christmas */
 countDaysUntilHolidays("2025-12-25", "my-element");
 
