@@ -18,8 +18,16 @@ function setElementText(elementName, date) {
   elementName.innerText = countDaysUntilHolidays(date);
 }
 
+/** The main function that assigns the number of days left until holidays to
+ * the element variable and updates the element text with the number of days
+ * left until holidays */
+function updateElementText(elementName, date) {
+  var element = fetchElement(elementName);
+  setElementText(element, date);
+}
+
 /** Counts the days left until Christmas */
-countDaysUntilHolidays("2025-12-25", "my-element");
+updateElementText("my-element", "2025-12-25");
 
 /** Counts the days left until New Year's Eve */
-countDaysUntilHolidays("2026-01-01", "my-element2");
+updateElementText("my-element2", "2026-01-01");
