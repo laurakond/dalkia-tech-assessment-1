@@ -2,20 +2,15 @@
 
 Step 1: Made the initial commit
 
-Step 2: refactored code following DRY clean code concept:
+Step 2: Refactored code following clean code concepts (DRY and one task per function):
 
-1. Added two properties to make the function dynamic:
+1. Broke down `countDaysUntilHolidays`function to the following smaller functions:
+   - `countDaysUntilHolidays` - calculated the difference between the target and current dates
+   - `fetchElement` - fetches the element from HTML
+   - `setElementText` - allocates the element's inner text to be the result of the `countDaysUntilHolidays` function
+   - `updateElementText` - the main function that assigns `fetchElement` to a variable so it can be used for calling `setElementText`
 
-   - one for the date of choice
-   - one for the element of choice
-
-2. Replaced manually written date and elements with the above properties
-
-3. Removed the second function as it has become redundant after the above code implementation.
-
-4. Renamed the function to make it more readable
-
-Step 3: called `countDaysUntilHolidays` function with two chosen arguments:
+Step 3: called `updateElementText` function with two chosen arguments:
 
 - one to count the days left until Christmas
 - one to count the days left until New Years eve
