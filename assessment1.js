@@ -18,8 +18,7 @@ function setElementText(element, date) {
 }
 
 /** The main function that assigns the number of days left until holidays to
- * the element variable and updates the element text with the number of days
- * left until holidays */
+ * the element variable and runs the variable through setElementText */
 function updateElementText(id, date) {
   var element = fetchElement(id);
   setElementText(element, date);
