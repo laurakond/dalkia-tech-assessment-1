@@ -3,7 +3,7 @@ function countDaysUntilHolidays(date) {
   var currentDate = new Date();
   var targetDate = new Date(date);
 
-  return Math.round((q - p) / (1000 * 60 * 60 * 24));
+  return Math.round((targetDate - currentDate) / (1000 * 60 * 60 * 24));
 }
 
 /** Function that fetches the element from HTML */
