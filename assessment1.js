@@ -7,22 +7,21 @@ function countDaysUntilHolidays(date) {
 }
 
 /** Function that fetches the element from HTML */
-function fetchElement(elementName) {
-  return document.getElementById(elementName);
+function fetchElement(id) {
+  return document.getElementById(id);
 }
 
 /** Function that allocates element text to the number of days left until
- * holidays
- */
-function setElementText(elementName, date) {
-  elementName.innerText = countDaysUntilHolidays(date);
+ * holidays */
+function setElementText(element, date) {
+  element.innerText = countDaysUntilHolidays(date);
 }
 
 /** The main function that assigns the number of days left until holidays to
  * the element variable and updates the element text with the number of days
  * left until holidays */
-function updateElementText(elementName, date) {
-  var element = fetchElement(elementName);
+function updateElementText(id, date) {
+  var element = fetchElement(id);
   setElementText(element, date);
 }
 
